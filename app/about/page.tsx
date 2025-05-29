@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { PageHeader } from "@/components/page-header"
 import habeshas from "../../public/habeshas.jpeg";
+import placeholder from "../../public/placeholder.svg";
 
 export const metadata = {
   title: "About",
@@ -139,7 +140,7 @@ export default function AboutPage() {
               >
                 <div className="aspect-square overflow-hidden">
                   <Image
-                    src={`/placeholder.svg?height=300&width=300&text=Team+Member+${member}`}
+                    src={placeholder}
                     alt={`Team Member ${member}`}
                     width={300}
                     height={300}
