@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { PageHeader } from "@/components/page-header"
+import placeholder from "../../public/placeholder.svg";
 
 export const metadata = {
   title: "Speakers",
@@ -23,7 +24,7 @@ export default function SpeakersPage() {
             >
               <div className="aspect-[3/4] overflow-hidden">
                 <Image
-                  src={`/placeholder.svg?height=400&width=300&text=Speaker+${index + 1}`}
+                  src={placeholder}
                   alt={`Speaker ${index + 1}`}
                   width={300}
                   height={400}

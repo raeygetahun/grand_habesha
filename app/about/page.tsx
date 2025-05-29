@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { PageHeader } from "@/components/page-header"
+import habeshas from "../../public/habeshas.jpeg";
 
 export const metadata = {
   title: "About",
@@ -39,7 +40,7 @@ export default function AboutPage() {
           </div>
           <div className="relative aspect-video overflow-hidden rounded-xl animate-slide-in-right hover-scale">
             <Image
-              src="/habeshas.jpeg"
+              src={habeshas}
               alt="Business networking event"
               fill
               className="object-cover"

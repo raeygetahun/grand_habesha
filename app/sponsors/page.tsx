@@ -2,6 +2,7 @@ import Image from "next/image"
 import { PageHeader } from "@/components/page-header"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import placeholder from "../../public/placeholder.svg";
 
 export const metadata = {
   title: "Sponsors",
@@ -27,7 +28,7 @@ export default function SponsorsPage() {
               >
                 <div className="mb-4 h-24 w-full flex items-center justify-center">
                   <Image
-                    src={`/placeholder.svg?height=80&width=160&text=Sponsor+${sponsor}`}
+                    src={placeholder}
                     alt={`Sponsor ${sponsor}`}
                     width={160}
                     height={80}
@@ -57,7 +58,7 @@ export default function SponsorsPage() {
               >
                 <div className="mb-3 h-16 w-full flex items-center justify-center">
                   <Image
-                    src={`/placeholder.svg?height=60&width=120&text=Sponsor+${index + 1}`}
+                    src={placeholder}
                     alt={`Sponsor ${index + 1}`}
                     width={120}
                     height={60}
@@ -80,7 +81,7 @@ export default function SponsorsPage() {
                 style={{ animationDelay: `${0.05 * index}s` }}
               >
                 <Image
-                  src={`/placeholder.svg?height=50&width=100&text=Sponsor+${index + 1}`}
+                  src={placeholder}
                   alt={`Sponsor ${index + 1}`}
                   width={100}
                   height={50}
@@ -208,7 +209,7 @@ export default function SponsorsPage() {
               >
                 <div className="mb-4 h-16 w-full flex items-center justify-center">
                   <Image
-                    src={`/placeholder.svg?height=60&width=120&text=Partner`}
+                    src={placeholder}
                     alt={partner}
                     width={120}
                     height={60}

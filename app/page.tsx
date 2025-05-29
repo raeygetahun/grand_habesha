@@ -2,6 +2,10 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Calendar, MapPin, Users, Clock, ArrowRight } from "lucide-react"
+import placeholder from "../public/placeholder.svg";
+// import placeholder_user from "../public/placeholder-user.jpg";
+
+ 
 
 export const metadata = {
   title: "Grand Habesha Business - Connecting the Global Habesha Business Community",
@@ -193,7 +197,7 @@ export default function HomePage() {
                 >
                   <div className="aspect-[3/4] overflow-hidden">
                     <Image
-                      src={`/placeholder.svg?height=400&width=300&text=Speaker+${speaker}`}
+                      src={placeholder}
                       alt={`Speaker ${speaker}`}
                       width={300}
                       height={400}
@@ -306,7 +310,7 @@ export default function HomePage() {
                   style={{ animationDelay: `${0.1 * index}s` }}
                 >
                   <Image
-                    src={`/placeholder.svg?height=80&width=160&text=Sponsor+${sponsor}`}
+                    src={placeholder}
                     alt={`Sponsor ${sponsor}`}
                     width={160}
                     height={80}

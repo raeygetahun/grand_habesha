@@ -2,6 +2,7 @@ import { PageHeader } from "@/components/page-header"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import placeholder from "../../public/placeholder.svg";
 
 export const metadata = {
   title: "Schedule",
@@ -158,7 +159,7 @@ export default function SchedulePage() {
                       {session.speakers.length > 0 && (
                         <div className="mt-2 flex items-center gap-2">
                           <div className="h-8 w-8 overflow-hidden rounded-full bg-muted">
-                            <Image src="/placeholder.svg?height=32&width=32" alt="Speaker" width={32} height={32} />
+                            <Image src={placeholder} alt="Speaker" width={32} height={32} />
                           </div>
                           <div>
                             <span className="text-sm font-medium">{session.speakers[0].name}</span>
@@ -240,7 +241,7 @@ export default function SchedulePage() {
                 <p className="mt-2 text-gray-500">{workshop.description}</p>
                 <div className="mt-4 flex items-center gap-2">
                   <div className="h-8 w-8 overflow-hidden rounded-full bg-muted">
-                    <Image src="/placeholder.svg?height=32&width=32" alt="Instructor" width={32} height={32} />
+                    <Image src={placeholder} alt="Instructor" width={32} height={32} />
                   </div>
                   <span className="text-sm font-medium">{workshop.instructor}</span>
                 </div>
